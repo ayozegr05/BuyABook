@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "firebase-admin": "^12.1.0",
+    "morgan": "^1.10.0"
+  },
+  "name": "mybooks",
+  "version": "1.0.0",
+  "description": "books store",
+  "main": "index.js",
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon MYBOOKS/index.js"
+  },
+  "author": "Ayoze",
+  "license": "ISC"
+}
