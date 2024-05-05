@@ -1,15 +1,16 @@
 import express from 'express';
 import morgan from 'morgan';
 import router from './DbMongo/routes.js';
+// import router from './Api/routes/index.js';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';  
 import { connectDB } from './DbMongo/db.js';
 import dotenv from 'dotenv';
 
 // import exphbs from 'express-handlebars'
-import path from 'path';
+// import path from 'path';
 
-dotenv.config({ path: 'config.env' });
+dotenv.config();
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
