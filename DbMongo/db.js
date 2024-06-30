@@ -1,5 +1,6 @@
 import mongoose from 'mongoose';
 
+
 // Función para conectar a MongoDB
 export async function connectDB() {
     try {
