@@ -1,12 +1,28 @@
 import React from "react";
-import { Text, View, StatusBar } from "react-native";
-
+import { Text, View, StyleSheet } from "react-native";
+import BooksScreen from "./books.js";
 const Main = () => {
     return (
-        <View>
-            <Text>Buy a Book</Text>
+        <View style={styles.container}>
+            <Text style={styles.title}>Buy a Book</Text>
+            <View style={styles.booksContainer}>
+                <BooksScreen />
+            </View>
         </View>
-    )
+    );
 }
 
-export default Main
+const styles = StyleSheet.create({
+    container: {
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    title: {
+        fontSize: 24,
+        fontWeight: 'bold',
+        marginTop: 150,
+    },
+ 
+});
+
+export default Main;

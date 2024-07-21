@@ -3,7 +3,7 @@ import Book from './model.js';
 
 const router = express.Router();
 
-router.get('/books', async (req, res) => {
+router.get('/', async (req, res) => {
     try {
         // Obtener todos los libros de la base de datos
         const books = await Book.find();
